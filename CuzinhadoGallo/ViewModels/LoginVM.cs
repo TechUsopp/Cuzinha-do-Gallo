@@ -1,8 +1,8 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace CuzinhadoGallo.ViewModel
+namespace CuzinhadoGallo.ViewModels
 
-public class LoginVm
+public class LoginVM
 {
     [Display(Name = "Email ou Nome de Usuário", Prompt = "Informe seu Email ou Nome de Usuário")]
     [Required(ErrorMessage = "Por favor, informe seu Email ou nome de usuário")]
