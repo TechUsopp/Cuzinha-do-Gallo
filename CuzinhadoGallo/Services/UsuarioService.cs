@@ -9,8 +9,10 @@ using Microsoft.AspNetCore.WebUtilities;
 using System.Text;
 using System.Text.Encodings.Web;
 
-namespace CuzinhadoGallo.Services
-{
+
+namespace CuzinhadoGallo.Services;
+
+
     public class UsuarioService : IUsuarioService
     {
         private readonly AppDbContext _contexto;
@@ -131,6 +133,7 @@ namespace CuzinhadoGallo.Services
 
                 await _userManager.AddToRoleAsync(user, "Usuário");
 
+                //Cria a Conta do Usuário
                 await _emailSender.SendEmailAsync(
                     registro.Email,
                     "Cuzinha Do Gallo - Criação de Conta",
@@ -429,5 +432,4 @@ namespace CuzinhadoGallo.Services
         }
 
 
-    }
-}
+ }
