@@ -1,6 +1,6 @@
 using CuzinhadoGallo.Models;
 
-namespace CuzinhadoGallo.ViewModel;
+namespace CuzinhadoGallo.ViewModels;
 
 public class HomeVM
 {

@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
-namespace GCook.ViewModels;
+
+namespace CuzinhadoGallo.ViewModels;
 public class RegistroVM
 {
     [Display (Name = "Nome Completo", Prompt = "Informe seu Nome Completo")]

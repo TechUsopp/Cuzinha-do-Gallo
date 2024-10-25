@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace CuzinhadoGallo.ViewModels
+namespace CuzinhadoGallo.ViewModels;
 
 public class LoginVM
 {
