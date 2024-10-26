@@ -1,5 +1,6 @@
 namespace CuzinhadoGallo.ViewModels;
-public class usuarioVM
+
+public class UsuarioVM
 {
     public string UsuarioId { get; set; }        
     public string UserName { get; set; }        

@@ -1,10 +1,10 @@
-using CuzinhadoGallo.ViewModel;
+using CuzinhadoGallo.ViewModels;
 using Microsoft.AspNetCore.Identity;
 
 namespace CuzinhadoGallo.Services;
-public class IUsuarioService
+public interface IUsuarioService
 {
-    Task<USuarioVM> GetUsuarioLogado();
+    Task<UsuarioVM> GetUsuarioLogado();
     Task<SignInResult> LoginUsuario(LoginVM login);
     Task<List<string>> RegistrarUsuario(RegistroVM registro);
     Task<bool> ConfirmarEmail(string userId, string code);

@@ -10,7 +10,7 @@ public class LoginVM
 
     [Display(Name = "Senha de Acesso", Prompt = "********")]
     [Required(ErrorMessage = "Por favor, informe sua senha")]
-    [DataType(DataType.PassWord)]
+    [DataType(DataType.Password)]
     public string Senha { get; set; }
 
     [Display(Name = "Manter Conectado?")]

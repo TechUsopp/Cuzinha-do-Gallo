@@ -9,6 +9,7 @@ public class EmailSender : IEmailSender
     {
         var mail = "gcook.app@outlook.com";
         var pw = "QV3E4khpZBEcL7K";
+        
         var client = new SmtpClient("smtp-mail.outlook.com", 587)
         {
             EnableSsl = true,
@@ -24,5 +25,10 @@ public class EmailSender : IEmailSender
     sendMail.IsBodyHtml = true;
 
     await client.SendMailAsync(sendMail);
+    }
+
+    public Task SenderEmailAsync(string email, string subject, string htmlMessage)
+    {
+        throw new NotImplementedException();
     }
 }

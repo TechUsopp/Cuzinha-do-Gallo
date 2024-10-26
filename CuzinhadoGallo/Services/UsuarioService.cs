@@ -133,13 +133,9 @@ namespace CuzinhadoGallo.Services;
 
                 await _userManager.AddToRoleAsync(user, "Usuário");
 
+                await _emailSender.SendEmailAsync(registro.Email,"Cuzinha Do Gallo - Criação de Conta",GetConfirmEmailHtml(HtmlEncoder.Default.Encode(url)));
+                
                 //Cria a Conta do Usuário
-                await _emailSender.SendEmailAsync(
-                    registro.Email,
-                    "Cuzinha Do Gallo - Criação de Conta",
-                    GetConfirmEmailHtml(HtmlEncoder.Default.Encode(url))
-                );
-
                 Usuario usuario = new()
                 {
                     UsuarioId = userId,
