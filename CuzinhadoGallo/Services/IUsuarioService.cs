@@ -8,4 +8,5 @@ public interface IUsuarioService
     Task<SignInResult> LoginUsuario(LoginVM login);
     Task<List<string>> RegistrarUsuario(RegistroVM registro);
     Task<bool> ConfirmarEmail(string userId, string code);
+    Task LogoffUsuario();
 }
