@@ -1,7 +1,5 @@
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CuzinhadoGallo.Controllers;
 
@@ -18,6 +16,16 @@ public class AdminController
     public IActionResult Index()
     {
         return View();
+    }
+
+    private IActionResult View()
+    {
+        throw new NotImplementedException();
+    }
+
+    private IActionResult View(string v)
+    {
+        throw new NotImplementedException();
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
