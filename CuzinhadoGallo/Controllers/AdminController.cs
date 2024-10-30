@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace CuzinhadoGallo.Controllers;
 
 [Authorize(Roles = "Administrador")]
-public class AdminController 
+public class AdminController : Controller
 {
     private readonly ILogger<AdminController> _logger;
 
@@ -18,19 +18,9 @@ public class AdminController
         return View();
     }
 
-    private IActionResult View()
-    {
-        throw new NotImplementedException();
-    }
-
-    private IActionResult View(string v)
-    {
-        throw new NotImplementedException();
-    }
-
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult error()
+    public IActionResult Error()
     {
-        return View("Error!")
+        return View("Error!");
     }
 }
