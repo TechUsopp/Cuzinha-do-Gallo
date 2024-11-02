@@ -1,2 +1,2 @@
-# Cuzinha-do-Gallo
-Aplicação Web .Net 8, Cole-Fist, para cadstro e exibição de receitas
+# CuzinhaDoGallo
+Aplicação Web .Net 8, Code-First, para cadastro e exibição de receitas
