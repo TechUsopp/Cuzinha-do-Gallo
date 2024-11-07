@@ -12,7 +12,7 @@ public class Receita
     [Required]
     [StringLength(100)]
     public string Nome { get; set; }
-    
+
     [StringLength(1000)]
     public string Descricao { get; set; }
 
@@ -20,6 +20,7 @@ public class Receita
     public string TempoPreparo { get; set; }
 
     public int Rendimento { get; set; } = 1;
+
     public Dificuldade Dificuldade { get; set; }
 
     [StringLength(300)]
@@ -33,6 +34,6 @@ public class Receita
     public int CategoriaId { get; set; }
     [ForeignKey("CategoriaId")]
     public Categoria Categoria { get; set; }
-    
+
     public ICollection<ReceitaIngrediente> Ingredientes { get; set; }
 }

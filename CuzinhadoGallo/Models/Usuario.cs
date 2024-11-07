@@ -5,13 +5,13 @@ using Microsoft.AspNetCore.Identity;
 namespace CuzinhadoGallo.Models;
 
 [Table("Usuario")]
-    public class Usuario
+public class Usuario
 {
     [Key]
-    public string UsuarioId { get; set; }      
+    public string UsuarioId { get; set; }
     [ForeignKey("UsuarioId")]
 
-    public IdentityUser ContaUsuario { get; set; }
+    public IdentityUser ContaUsuario  { get; set; }
 
     [Required]
     [StringLength(50)]
@@ -22,5 +22,4 @@ namespace CuzinhadoGallo.Models;
 
     [StringLength(300)]
     public string Foto { get; set; }
-    
 }

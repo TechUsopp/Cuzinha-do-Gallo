@@ -11,6 +11,7 @@ public class ReceitaIngrediente
     [ForeignKey("ReceitaId")]
 
     public Receita Receita { get; set; }
+
     [Key, Column(Order = 2)]
     public int IngredienteId { get; set; }
     [ForeignKey("IngredienteId")]
@@ -19,8 +20,5 @@ public class ReceitaIngrediente
     [Required]
     [StringLength(30)]
     public string Quantidade { get; set; }
-    
-    [StringLength(200)]
-    public string Preparo { get; set; }
-    
+
 }
